@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpeningHours", "OpeningHours\OpeningHours.csproj", "{C5A4F5F4-C05F-4DED-97B7-9CACC0D53024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversePermutation", "InversePermutation\InversePermutation.csproj", "{E65847F2-7A22-4957-8C56-4A567E418AA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5A4F5F4-C05F-4DED-97B7-9CACC0D53024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A4F5F4-C05F-4DED-97B7-9CACC0D53024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A4F5F4-C05F-4DED-97B7-9CACC0D53024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A4F5F4-C05F-4DED-97B7-9CACC0D53024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E65847F2-7A22-4957-8C56-4A567E418AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65847F2-7A22-4957-8C56-4A567E418AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65847F2-7A22-4957-8C56-4A567E418AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65847F2-7A22-4957-8C56-4A567E418AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6D091F6-3F6A-4CB9-AD81-B7ADF6CFC5F0}
+	EndGlobalSection
+EndGlobal
