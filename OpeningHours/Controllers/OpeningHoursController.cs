@@ -19,14 +19,14 @@ namespace OpeningHours.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("")]
+        [HttpPost("CreateOpeningHours")]
         public async Task<IActionResult> CreateOpeningHours([FromBody] CreateOpeningHoursCommand command)
         {
             var result = await _mediator.Send(command);
             return CreatedAtAction("GetOpeningHours", new { openhoursId = result.Id }, result);
         }
 
-        [HttpGet("{openhoursId}")]
+        [HttpGet("GetOpeningHours/{openhoursId}")]
         public async Task<IActionResult> GetOpeningHours(Guid openhoursId)
         {
             if (openhoursId == Guid.Empty)
@@ -37,7 +37,7 @@ namespace OpeningHours.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("GetAllOpeningHours")]
         public async Task<IActionResult> GetAllOpeningHours()
         {
             var query = new GetAllOpeningQuery();

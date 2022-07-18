@@ -56,7 +56,6 @@ namespace OpeningHours.Handlers
 
                     if (times != null && times?.Count > 0)
                     {
-                        // Close previous day if needed
                         if (times[0].type == "close")
                         {
                             if (prev_day != null && !closed)
@@ -72,7 +71,6 @@ namespace OpeningHours.Handlers
                             times = times.Skip(1).ToList();
                         }
 
-                        // Process current day
                         if (!processed_days.ContainsKey(day))
                         {
                             var processed_day = new List<object>();
@@ -87,7 +85,7 @@ namespace OpeningHours.Handlers
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Wrong input data!");
+                                    Console.WriteLine("Invalid data!");
                                 }
                             }
                             prev_day = processed_day;
